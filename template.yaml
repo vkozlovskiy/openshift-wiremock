@@ -127,7 +127,7 @@ objects:
     runPolicy: Serial
     source:
       git:
-        uri: https://github.com/jcpowermac/openshift-wiremock
+        uri: https://github.com/vkozlovskiy/openshift-wiremock
       type: Git
     strategy:
       dockerStrategy:
