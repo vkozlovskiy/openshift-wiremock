@@ -1,10 +1,9 @@
-FROM centos
+FROM centos:7
 
 ENV HOME=/opt/wiremock \
     TERM=xterm
 
-RUN yum update -y && \
-    yum install -y centos-release-openshift-origin epel-release java-1.8.0-openjdk vim && \
+RUN yum install -y centos-release-openshift-origin epel-release java-1.8.0-openjdk vim && \
     yum install -y python2-pip origin-clients && \
     pip install -U pip && \
     pip install -U setuptools && \
